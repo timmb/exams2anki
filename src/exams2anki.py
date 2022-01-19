@@ -169,6 +169,7 @@ def get_driver(args):
         chrome_options.add_argument('headless')
         chrome_options.add_argument('silent')
         chrome_options.add_argument('no-sandbox')
+        chrome_options.add_argument('disable-dev-shm-usage')
         chrome_options.add_experimental_option('excludeSwitches', ['enable-logging'])
     return webdriver.Chrome(options=chrome_options)
 
