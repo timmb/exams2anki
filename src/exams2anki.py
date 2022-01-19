@@ -86,9 +86,9 @@ def generate_deck(title, description, cards):
 
 
 def get_deck_template():
-    front = get_data(r'templates\frontside.html')
-    back = get_data(r'templates\backside.html')
-    style = get_data(r'templates\style.css')
+    front = get_data(r'templates/frontside.html')
+    back = get_data(r'templates/backside.html')
+    style = get_data(r'templates/style.css')
     return {'front': front, 'back': back, 'style': style}
 
 
